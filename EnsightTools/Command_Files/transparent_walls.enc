@@ -1,0 +1,32 @@
+VERSION 10.03
+
+part: select_begin
+ 1
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 2
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 12
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+ext: menu.set_color.white.partlist BeginMenuCmd
+ext: menu.set_color.white.partlist {"menu_version": 1.0, "mousepos": [-1.2345000022229158e-10, -1.2345000022229158e-10], "widget": "list", "target": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "attribute": 1610612745, "pos": [-1.2345000022229158e-10, -1.2345000022229158e-10, -1.2345000022229158e-10], "menu_extra_info": null, "mode": "Part", "part_selection": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "pick": 0}
+ext: menu.set_color.white.partlist EndMenuCmd
+ext: menu.set_color.white.partlist # End run()
+ext: menu.generic_color.make_transparent.partlist BeginMenuCmd
+ext: menu.generic_color.make_transparent.partlist {"menu_version": 1.0, "mousepos": [-1.2345000022229158e-10, -1.2345000022229158e-10], "widget": "list", "target": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "attribute": 1610612976, "pos": [-1.2345000022229158e-10, -1.2345000022229158e-10, -1.2345000022229158e-10], "menu_extra_info": null, "mode": "Part", "part_selection": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "pick": 0}
+ext: menu.generic_color.make_transparent.partlist EndMenuCmd
+ext: menu.generic_color.make_transparent.partlist # End run()
+ext: menu.generic_color.transparency.partlist # End run()
+ext: menu.generic_color.transparency.partlist BeginMenuCmd
+ext: menu.generic_color.transparency.partlist {"mousepos": [-1.2345000022229158e-10, -1.2345000022229158e-10], "widget": "list", "target": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "menu_extra_info_note": "Transparency value.", "attribute": 1610612745, "pos": [-1.2345000022229158e-10, -1.2345000022229158e-10, -1.2345000022229158e-10], "menu_extra_info": 0.4099999964237213, "mode": "Part", "part_selection": [["ENS_PART", [3]], ["ENS_PART", [4]], ["ENS_PART", [5]], ["ENS_PART", [6]], ["ENS_PART", [7]], ["ENS_PART", [8]], ["ENS_PART", [9]], ["ENS_PART", [10]], ["ENS_PART", [11]]], "pick": 0}
+ext: menu.generic_color.transparency.partlist EndMenuCmd

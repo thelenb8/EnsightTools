@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EnsightTools_Function_List</title>
+	<link rel="stylesheet" href="Y:\HTML\function_list.css">
+</head>
+<body>
+<h1>EnsightTools: Module Function and Class List</h1>
+<h2>BULK_QUERY.py</h2>
+<h2>DATA_CONVERT.py</h2>
+<h2>ensight.py</h2>
+<h3>Functions</h3>
+<p>[<span class="output_parameter">None</span>] = <span class="function_name">nothing</span>()</p>
+<h2>Image_Maker.py</h2>
+<h2>tools.py</h2>
+<h3>Functions</h3>
+<p>[<span class="output_parameter">i</span>] = <span class="function_name">find_in_list</span>(<span class="pos_parameter">target</span>, <span class="pos_parameter">list</span>)</p>
+<p><span class="doc_string">Finds the index of the target in the list.</span></p>
+<p>[<span class="output_parameter">None</span>] = <span class="function_name">find_in_list</span>(<span class="pos_parameter">target</span>, <span class="pos_parameter">list</span>)</p>
+<p><span class="doc_string">Finds the index of the target in the list.</span></p>
+<p>[<span class="output_parameter">match_list0</span>] = <span class="function_name">find_file_type</span>(<span class="pos_parameter">directory</span>, <span class="pos_parameter">regex</span>)</p>
+<p><span class="doc_string">Finds a filename in a given directory that matches the provided regular<br>    expression.</span></p>
+<p>[ ] = <span class="function_name">make_output_folder</span>(<span class="pos_parameter">directory</span>, <span class="pos_parameter">folder_name</span>, <span class="default_parameter">delete_contents</span>=<span class="default_value">False</span>)</p>
+<p><span class="doc_string"> make_output_folder(directory,folder_name)<br><br>    DESCRIPTION: Checks to see if the provided directory has the folder<br>    specified. If it does, it deletes the contents within the folder. If it<br>    does not, then create the folder.<br><br>    INPUTS:<br>    directory: <str> Full path to the directory containing the data to be<br>               processed<br>    folder_name: <str> Name for the new folder to be placed in the given<br>                 directory<br><br>    OUTPUTS:<br>    None: File structure on the computer is modified.<br><br>    </span></p>
+<p>[ ] = <span class="function_name">sheep</span>()</p>
+<p>[<span class="output_parameter">file_name</span>] = <span class="function_name">load_case_file</span>(<span class="pos_parameter">directory</span>)</p>
+<p>[<span class="output_parameter">part_number</span>] = <span class="function_name">find_converge_data</span>()</p>
+<p><span class="doc_string">Return the part id number for the converge cell data part.</span></p>
+<p>[ ] = <span class="function_name">black_background</span>()</p>
+<p>[ ] = <span class="function_name">hide_all_parts</span>()</p>
+<p>[<span class="output_parameter">clip_part_id</span>] = <span class="function_name">ortho_clip</span>(<span class="pos_parameter">clip_plane</span>, <span class="pos_parameter">clipped_part</span>, <span class="pos_parameter">offset</span>)</p>
+<p><span class="doc_string">clip_part_id = ortho_clip(clip_plane,clipped_part,offset)<br><br>    DESCRIPTION: Generates an orthogonal clip in either the x, y, or z plane<br>                 through a given domain.<br><br>    INPUTS:<br>    clip_plane: <str> (X|Y|Z) this is the normal axis of the plane<br>    clipped_part: <int> this the part ID for the domain of data that is being<br>                  cut through<br>    offset: <float> Distance from the origin of the clip plane [m]<br><br>    OUTPUTS:<br>    clip_part_id: <int> this is the ensight part number id for the created clip<br>    </span></p>
+<p>[<span class="output_parameter">new_var</span>] = <span class="function_name">make_nodal_variable</span>(<span class="pos_parameter">var</span>, <span class="pos_parameter">domain_part_number</span>)</p>
+<p><span class="doc_string">Interpolates the data for a given variable to calculate its values at<br>    nodal locations rather than cell centered to make nicer plots.<br><br><br>    Old, only function in DATA_CONVERT.py</span></p>
+<p>[ ] = <span class="function_name">calculate_progress_variable</span>(<span class="pos_parameter">part_number</span>)</p>
+<p>[ ] = <span class="function_name">color_part</span>(<span class="pos_parameter">part_id</span>, <span class="pos_parameter">variable</span>)</p>
+<p><span class="doc_string">Instructs Ensight to color the given part id with the given variable.</span></p>
+<p>[ ] = <span class="function_name">ortho_adjust_view</span>(<span class="pos_parameter">axis</span>, <span class="default_parameter">zoom_level</span>=<span class="default_value">DEFAULT_ZOOM_LEVEL</span>, <span class="default_parameter">axis_negate</span>=<span class="default_value">True</span>)</p>
+<p><span class="doc_string">Adjusts the viewport view for image making.</span></p>
+<p>[ ] = <span class="function_name">colorbar_scale</span>(<span class="pos_parameter">variable</span>, <span class="pos_parameter">low</span>, <span class="pos_parameter">high</span>, <span class="pos_parameter">number_of_levels</span>)</p>
+<p><span class="doc_string">Modifies the colorbar scale to the provided parameters.</span></p>
+<p>[ ] = <span class="function_name">setup_legend</span>(<span class="pos_parameter">variable</span>, <span class="pos_parameter">title_string</span>)</p>
+<p><span class="doc_string">Modifies the position and apperance of the legend.</span></p>
+<p>[<span class="output_parameter">tsteps</span>] = <span class="function_name">create_time_steps</span>(<span class="pos_parameter">start_time</span>, <span class="pos_parameter">end_time</span>, <span class="pos_parameter">time_step</span>)</p>
+<p>[ ] = <span class="function_name">determine_number_of_steps</span>(<span class="pos_parameter">target_dt</span>)</p>
+<p>[ ] = <span class="function_name">min_max_query</span>(<span class="pos_parameter">directory</span>, <span class="pos_parameter">case_name</span>, <span class="pos_parameter">variable</span>, <span class="pos_parameter">units</span>, <span class="pos_parameter">steps</span>)</p>
+<p><span class="doc_string">Function that produces a text file containing the minimum and maximum<br>    values of a variable in the Converge cell data.</span></p>
+<p>[<span class="output_parameter">data</span>] = <span class="function_name">query_instructions</span>(<span class="pos_parameter">part_number</span>, <span class="pos_parameter">variable</span>, <span class="pos_parameter">constraint</span>, <span class="pos_parameter">start_time</span>, <span class="pos_parameter">end_time</span>, <span class="pos_parameter">steps</span>)</p>
+<p>[ ] = <span class="function_name">setup_image</span>()</p>
+<p>[ ] = <span class="function_name">time_step_output</span>(<span class="pos_parameter">output_directory</span>, <span class="pos_parameter">tsteps</span>)</p>
+<p>[ ] = <span class="function_name">bulk_min_max_query</span>(<span class="pos_parameter">directory_list</span>, <span class="pos_parameter">variable_list</span>, <span class="pos_parameter">units_list</span>, <span class="pos_parameter">step_dt</span>)</p>
+<h3>Classes</h3>
+<p><span class="class_dir">NoMatchFound(Exception)</span></p>
+<h4>Attributes</h4>
+<h4>Methods</h4>
+	</body>
+<html>

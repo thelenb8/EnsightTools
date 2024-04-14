@@ -1,0 +1,6 @@
+VERSION 10.03
+
+ext: menu.view.negx BeginMenuCmd
+ext: menu.view.negx {"menu_version": 1.0, "mousepos": [0.3757115602493286, 0.5105932354927063], "widget": "graphics", "target": [["ENS_VPORT", [0]]], "pos": [0.0, 0.0, 0.0], "item": 0, "menu_extra_info": null, "part_selection": [["ENS_PART", [13]]], "pick": 13}
+ext: menu.view.negx EndMenuCmd
+ext: menu.view.negx # End run()

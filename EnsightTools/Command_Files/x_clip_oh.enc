@@ -1,0 +1,90 @@
+VERSION 10.03
+
+part: select_begin
+ 1
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 2
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 3
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 4
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 5
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 6
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 7
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 8
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 9
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 10
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 11
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+part: select_begin
+ 12
+part: select_end
+part: modify_begin
+part: visible OFF
+part: modify_end
+ext: menu.modelpart.clipx BeginMenuCmd
+ext: menu.modelpart.clipx {"menu_version": 1.0, "mousepos": [-1.2345000022229158e-10, -1.2345000022229158e-10], "widget": "list", "target": [["ENS_PART", [2]]], "attribute": 1610612740, "pos": [-1.2345000022229158e-10, -1.2345000022229158e-10, -1.2345000022229158e-10], "menu_extra_info": null, "mode": "Part", "part_selection": [["ENS_PART", [2]]], "pick": 0, "post_part_selection": [["ENS_PART", [13]]]}
+ext: menu.modelpart.clipx EndMenuCmd
+ext: menu.modelpart.clipx # End run()
+legend: select_palette_begin
+Coordinates
+legend: select_palette_end
+legend: visible OFF
+legend: select_palette_begin
+Time
+legend: select_palette_end
+legend: visible OFF
+ext: menu.generic_color.select_variable.partlist BeginMenuCmd
+ext: menu.generic_color.select_variable.partlist {"menu_version": 1.0, "mousepos": [-1.2345000022229158e-10, -1.2345000022229158e-10], "widget": "list", "target": [["ENS_PART", [13]]], "attribute": 1610612740, "pos": [-1.2345000022229158e-10, -1.2345000022229158e-10, -1.2345000022229158e-10], "menu_extra_info": [["ENS_VAR", [11]]], "mode": "Part", "part_selection": [["ENS_PART", [13]]], "pick": 0}
+ext: menu.generic_color.select_variable.partlist EndMenuCmd
+ext: menu.generic_color.select_variable.partlist # End run()

@@ -1,0 +1,10 @@
+VERSION 10.03
+
+file: image_format tiff
+file: image_format_options Compression None
+anim_recorders: render_offscreen ON
+file: image_numpasses 4
+file: image_stereo current
+file: image_screen_tiling 1 1
+file: image_file F:/Python/Ensight/images/test1
+file: save_image
